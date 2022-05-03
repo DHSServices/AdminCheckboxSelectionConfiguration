@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/system_file.xsd">
+    <system>
+        <section id="admincheckboxselectionsettings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Admin Checkbox Selection Settings</label>
+            <tab>dhsservices</tab>
+            <resource>DHSServices_AdminCheckboxSelectionConfiguration::configurations</resource>
+            <group id="salesshippingcheckboxsettings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Sales and Shipping Checkbox Settings</label>
+                <field id="invoicenotifybymailchecked" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Invoice Notify by Mail Checked</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>
+                        <![CDATA[Checkbox Notify by Mail when creating Invoice checked.]]>
+                    </comment>
+                </field>
+                <field id="shippingnotifybymailchecked" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Shipping Notify by Mail Checked</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>
+                        <![CDATA[Checkbox Notify by Mail when creating Shipping checked.]]>
+                    </comment>
+                </field>
+                <field id="creditmemonotifybymailchecked" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>CreditMemo Notify by Mail Checked</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>
+                        <![CDATA[Checkbox Notify by Mail when creating CreditMemo checked.]]>
+                    </comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
